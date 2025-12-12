@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVLZ Official Merchandise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial Black', sans-serif;
+            background: linear-gradient(135deg, #1a0000 0%, #000000 50%, #330000 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .logo {
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #ff0000, #8b0000, #ff4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ff4444;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .product-card {
+            background: linear-gradient(145deg, #1a0000, #0d0000);
+            border: 2px solid #8b0000;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1s ease;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
+            animation: pulse 3s infinite;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: #ff0000;
+            box-shadow: 0 20px 60px rgba(255, 0, 0, 0.4);
+        }
+
+        .product-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ff4444;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-version {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #ff0000, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 30px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 50px;
+            background: linear-gradient(45deg, #8b0000, #ff0000);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            border: 2px solid #ff0000;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #ff0000, #ff4444);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
+            transform: scale(1.05);
+        }
+
+        .roblox-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+        }
+
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            
+            .product-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">DVLZ</div>
+        <div class="subtitle">Official Merchandise</div>
+    </div>
+
+    <div class="container">
+        <div class="product-card">
+            <div class="roblox-icon">🎮</div>
+            <div class="product-title">VARSITY DVLZ</div>
+            <div class="product-version">V2</div>
+            <a href="https://www.roblox.com/catalog/88427167475147/VARSITY-DVLZ-V2" target="_blank" class="btn">
+                Beli Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <div class="roblox-icon">🎮</div>
+            <div class="product-title">VARSITY DVLZ</div>
+            <div class="product-version">V1</div>
+            <a href="https://www.roblox.com/catalog/71478485418536/VARSITY-DVLZ-V1" target="_blank" class="btn">
+                Beli Sekarang
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 DVLZ Official | Roblox Merchandise</p>
+    </div>
+</body>
+</html>
